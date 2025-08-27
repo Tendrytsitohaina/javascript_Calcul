@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="../image/svg/javascript.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <title>JS Project Demo</title>
+    </head>
+    <body>
+        <div id="navbar">
+            <div class="container">
+                <span href="#default" id="logo">DEMO.proj</span>
+                <div class="openNavlink" onclick="openNav()">
+                    <div onclick="burgerChange(this)" class="menu">
+                        <div class="up"></div>
+                        <div class="middle"></div>
+                        <div class="down"></div>
+                    </div>
+                </div>
+                <div id="navbar-right" class="navbar-right">
+                    <a id="item1" class="nav-link" href="#titre1">Second degree</a>
+                    <a id="item2" class="nav-link" href="#titre2">Analogique</a>
+                    <a id="item3" class="nav-link" href="#titre3">Publicite</a>
+                    <a id="item4" href="../index.html"><img src="image/icons8_home_50px.png" alt=""> Accueil</a>
+                </div>
+            </div>
+        </div>
+        <div id="titre1"></div>
+        <div class="page1demo container">
+            <div class="divider"></div>
+            <h1 class="titre">SECOND DEGREE</h1>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="equationImg">
+                        <div class="mySlides">
+                            <img src="image/calculator-988017_1920.jpg" alt="photo" style="width: 100%;">
+                        </div>
+                        <!-- <div class="mySlides fade">
+                            <img src="image/mini Img/equation.png" alt="photo" style="width: 100%;">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/math-5247958_1920.jpg" alt="photo" style="width: 100%;">
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="equationContent">
+                        <h5>Veuillez entrer les nombres. </h5>
+                        <div class="equationCode">
+                            <input type="number" name="a" id="nb1" class="form-control">
+                            <label for="a">X <sup>2</sup> +</label>
+                            <input type="number" name="b" id="nb2" class="form-control">
+                            <label for="b">X +</label>
+                            <input type="number" name="c" id="nb3" class="form-control">
+                            <label for="c">= 0</label>
+                        </div>
+                        <div class="row equationBtn">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <input type="button" value="Calculer" class="button1" onclick="equationSolution()">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <input type="button" value="Effacer" class="button1">
+                            </div>
+                        </div>
+                        <div id="equationResult" class="equationResult">
+                            <!-- <div class="row"> -->
+                                <div id="imgSuccess" class="col-md-3">
+                                    <div id="imgResult"></div>
+                                </div>
+                                <!-- <div class="divideur"></div> -->
+                                <div id="textSuccess" class="col-md-9 ">
+                                    <h4  id="poptitre" class="text_light"></h4>
+                                    <p id="textResult"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="titre2"></div><br>
+        <div class="page2demo container">
+            <div class="divider"></div>
+            <h1 class="titre">CIRCUIT ELECTRIQUE</h1>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="circuitImg">
+                        <div class="mySlides">
+                            <img src="image/mini Img/circuit.png" alt="photo" style="width: 100%;">
+                        </div>
+                        <!-- <div class="mySlides fade">
+                            <img src="image/mini Img/equation.png" alt="photo" style="width: 100%;">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/math-5247958_1920.jpg" alt="photo" style="width: 100%;">
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="equationContent">
+                        <h5>Veuillez entrer les nombres. </h5>
+                        <div class="equationCode">
+                            <label for="a">U =</label>
+                            <input type="number" name="a" id="U" class="form-control">
+                            <label for="b">R1 =</label>
+                            <input type="number" name="b" id="R1" class="form-control">
+                            <label for="c">R2 =</label>
+                            <input type="number" name="c" id="R2" class="form-control">
+                        </div>
+                        <div class="equationCode">
+                            <label for="d">R3 =</label>
+                            <input type="number" name="d" id="R3" class="form-control">
+                            <label for="e">R4 =</label>
+                            <input type="number" name="e" id="R4" class="form-control">
+                        </div>
+                        <div class="row equationBtn">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <input type="button" value="Calculer" class="button1" onclick="circuitSolution()">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <input type="button" value="Effacer" class="button1">
+                            </div>
+                        </div>
+                        <div id="circuitResult" class="circuitResult">
+                            <!-- <div class="row"> -->
+                                <div id="imgSuccess2" class="col-md-3">
+                                    <div id="imgResult2"></div>
+                                </div>
+                                <!-- <div class="divideur"></div> -->
+                                <div id="textSuccess2" class="col-md-9 ">
+                                    <h4  id="poptitre2" class="text_light"></h4>
+                                    <p id="textResult2"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="titre3"></div>
+        <div class="page2demo container">
+            <div class="divider"></div>
+            <h1 class="titre">PANNEAU PUBLICITAIRE</h1>
+            <div class="divider"></div>
+            <div class="pub">
+                <img src="image/mini Img/image1.jpg" class="pub-img">
+                <img src="image/mini Img/image2.jpg" class="pub-img">
+                <img src="image/mini Img/image3.jpg" class="pub-img">
+                <img src="image/mini Img/image4.jpg" class="pub-img">
+                <img src="image/mini Img/image5.jpg" class="pub-img">
+            </div>
+            
+        </div>
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4  col-md-6 contactFt">
+                        <h3>Contact</h3>
+                        <div class="separateur"></div>
+                        <ul>
+                            <li><img src="../image/ico/icons8_phone_50px.png" alt=""> +261 38 46 660 27</li>
+                            <li><img src="../image/ico/icons8_phone_50px.png" alt=""> +261 33 41 151 60</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 contactFt" >
+                        <h3>Email</h3>
+                        <div class="separateur"></div>
+                        <ul>
+                            <li><img src="../image/ico/icons8_mail_50px.png" alt=""> tendryrandriatsitohaina@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 contactFt">
+                        <h3>Reseaux(Clique sur l'icone)</h3>
+                        <div class="separateur"></div>
+                        <ul>
+                            <li><a href="#"><img src="../image/ico/icons8_facebook_26px.png" alt="facebook"></a> Tendry Tsitohaina</li>
+                            <li><a href="#"><img src="../image/ico/icons8_instagram_logo_50px_1.png" alt="Insta"></a> Tendry.Tsito</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="js/demo.js"></script>
+</html>

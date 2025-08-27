@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Project</title>
+        <link rel="icon" href="image/svg/javascript.svg">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+    </head>
+    <body>
+        <div id="navbar">
+            <div class="container">
+                <span href="#default" id="logo">H4CK3R.proj</span>
+                <div class="openNavlink" onclick="openNav()">
+                    <div onclick="burgerChange(this)" class="menu">
+                        <div class="up"></div>
+                        <div class="middle"></div>
+                        <div class="down"></div>
+                    </div>
+                </div>
+                <div id="navbar-right" class="navbar-right">
+                    <a id="item1" class="nav-link active" href="#home">Accueil</a>
+                    <a id="item2" class="nav-link" href="#about">Projet</a>
+                    <a id="item3" class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div id="home"></div><br>
+        <div class="page1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hero-image">
+                            <div class="hero-text">
+                                <h1>I'm Tendry Tsitohaina</h1>
+                                <p>Developpeur Web</p>
+                            </div>
+                        </div><br>
+                    </div>
+                    <div id="presentation" class="col-lg-6">
+                        <h1>Hey Guys!</h1><br>
+                        <p>Bienvenue dans mon site web! <br><br>
+                            Je suis etudiant L1 a l'Ecole National de l' Informatique en 2024, passionne sur la technologie
+                            et son evolution. Je suis sur le parcours de Genie Logiciel et de La Base de donnees. 
+                            J'aimerai developper plusieurs Logiciel ou des applications mobile, web meme un jeu video.
+                             On ne peut pas fuir la numerisation parce que le monde s'avance toujours a chercher des 
+                            ou inventer des choses nouvelles sur la techonologie. 
+                            <br><br> Ceci c'est une travail pour regarder notre
+                             évolution apres le cours de Javascript avec Monsieur Venot. C'est un 
+                             travail pratique pour appliquer les cours. Le but est de faire une site
+                            web qui contient une animation avec le Javascript en faisant des calculs 
+                            et animation d'image.
+                        </p>
+                        <!-- <img src="image/ellipse/Rectangle 4.png" alt=""> -->
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div id="about" class="page2">
+            <div class="container">
+                <h1>Mes travaux dans cet projet:</h1><br>
+                <div class="rowImg">
+                    <div class="column">
+                        <div class="card">
+                            <img src="image/math-5247958_1920.jpg" alt="" style="width: 100%;">
+                            <div class="containerImg">
+                                <h3>Second Degree</h3>
+                                <p class="title1">Oh le math!</p>
+                                <p>C' est une automatisation dans un calcul d' une equation
+                                    de second degree. En entrant par l' utilisation les valeurs
+                                    souhaites. Entrer pour regader le demo!
+                                </p> 
+                                <a href="demo/demo.html#titre1"><input type="button" value="VOIR DEMO"> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="image/soldering-7897827_1920.jpg" alt="" style="width: 100%;">
+                            <div class="containerImg">
+                                <h3>Analogique</h3>
+                                <p class="title1">Oh le math!</p>
+                                <p>C' est une automatisation dans un calcul d' une equation
+                                    de second degree. En entrant par l' utilisation les valeurs
+                                    souhaites. Entrer pour regader le demo!
+                                </p>
+                                <a href="demo/demo.html#titre2 "><input type="button" value="VOIR DEMO"></a>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="image/mini Img/image5.jpg" alt="" style="width: 90%;">
+                            <div class="containerImg">
+                                <h3>Publicite</h3>
+                                <p class="title1">Oh le math!</p>
+                                <p>C' est une automatisation dans un calcul d' une equation
+                                    de second degree. En entrant par l' utilisation les valeurs
+                                    souhaites. Entrer pour regader le demo!
+                                </p>  
+                                <a href="demo/demo.html#titre3"><input type="button" value="VOIR DEMO"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact"></div>
+        <div class="divider"></div>
+            <div class="heading">
+                <h2>Contactez-moi</h2>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-lg-offset-1" >
+                    <form id="Contact-form" action=" " method="" role="form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="firstname">Prénom <span class="blue">*</span></label><br>
+                                <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Votre prénom...">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="name">Nom <span class="blue">*</span></label><br>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom..." >
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="mail">Email <span class="blue">*</span></label><br>
+                                <input type="text" id="email" name="mail" class="form-control" placeholder="Votre email..." >
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone">Téléphone <span class="blue">*</span></label><br>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Votre contact..." >
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="message">Message <span class="blue">*</span></label><br>
+                                <textarea type="text" id="Message" name="message" class="form-control" placeholder="Votre message..."></textarea>
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <p><span class="blue"><strong>* Ces information sont requises</strong></span></p>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" value="Envoyer" class="button1">
+                            </div>
+                        </div>
+                        <!-- <p class="thank-you" style="display: none "  >Votre Message a bien ete envoye. Merci de m'avoir contacte :) </p> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4  col-md-6 contactFt">
+                        <h3>Contact</h3>
+                        <div class="separateur"></div>
+                        <ul>
+                            <li><img src="image/ico/icons8_phone_50px.png" alt=""> +261 38 46 660 27</li>
+                            <li><img src="image/ico/icons8_phone_50px.png" alt=""> +261 33 41 151 60</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 contactFt" >
+                        <h3>Email</h3>
+                        <div class="separateur"></div>
+                        <ul>
+                            <li><img src="image/ico/icons8_mail_50px.png" alt=""> tendryrandriatsitohaina@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 contactFt">
+                        <h3>Reseaux(Clique sur l'icone)</h3>
+                        <div class="separateur"></div>
+                        <ul>
+                            <li><a href="#"><img src="image/ico/icons8_facebook_26px.png" alt="facebook"></a> Tendry Tsitohaina</li>
+                            <li><a href="#"><img src="image/ico/icons8_instagram_logo_50px_1.png" alt="Insta"></a> Tendry.Tsito</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="js/script.js"></script>
+</html>
